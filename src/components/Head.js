@@ -17,7 +17,7 @@ const Head = () => {
                 className="h-8 cursor-pointer" alt="menu" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKXjowOqsVBCCZ4Y4uSW8-7AqQemT3iTcbg&usqp=CAU" />
 
                 <a href="/">
-                <img className="h-8 mx-2" alt="youtube-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh5tBSHNb7p7uqezXqhb7zyxwQxX2nUtWR0A&usqp=CAU" />
+                <img className="h-8 mx-2" alt="youtube-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuE54d8krphaVP1AQ1Jd4G1uRqLcA2N81TnA&usqp=CAU" />
                 </a>
             </div>
             <div className="col-span-10 text-center">
