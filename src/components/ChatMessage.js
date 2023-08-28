@@ -9,8 +9,8 @@ const ChatMessage = ({name, message}) => {
             alt="user"
            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODEUZaWd7WmVgrTxi7w3HS63qUTu3B79uUA&usqp=CAU"
             />
-            <span className="font-bold px-2">{name}</span>
-            <span>{message}</span>
+            <span className="font-medium px-2">{name}</span>
+            <span className="text-sm font-light">{message}</span>
         </div>
     );
 };

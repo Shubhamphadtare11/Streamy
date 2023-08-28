@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Sidebar Components Stylesheet */
+
+.sidebarList li:hover{
+  background-color: #8080802b;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.sidebarList li{
+  cursor: pointer;
+  padding: 4px 7px;
+}
+
+.sidebarList{
+  transition-duration: 2s;
+}
+
+/* Body Outlet Stylesheet */
+
+.bodyOutlet{
+  padding: 0 45px;
+}

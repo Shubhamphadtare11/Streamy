@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import '../index.css';
 
 const Sidebar = () => {
 
@@ -10,7 +11,7 @@ const Sidebar = () => {
 
 
     return(
-        <div className="p-5 shadow-lg w-48">
+        <div className="p-5 shadow-lg w-48 sidebarList">
                <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/demo">Demo</Link></li>

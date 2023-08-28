@@ -5,13 +5,13 @@ const Demo2 = () => {
   let x = 0;
 
   const i = useRef(null);
-    useEffect(() =>{
-         i.current = setInterval(() =>{
-            console.log("Hi All", Math.random());
-        }, 1000);
+    // useEffect(() =>{
+    //      i.current = setInterval(() =>{
+    //         console.log("Hi All", Math.random());
+    //     }, 1000);
 
-        return () => clearInterval(i.current);
-    },[]);
+    //     return () => clearInterval(i.current);
+    // },[]);
 
     const ref = useRef(0);
     /*
