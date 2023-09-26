@@ -2,6 +2,7 @@ const VideoCard = ({info}) => {
     
     const{snippet, statistics} = info;
     const{channelTitle, title, thumbnails} = snippet;
+    //as seen above we have destructured snippet one more time from same api
 
     return(
         <div className="p-2 m-2 w-72">
