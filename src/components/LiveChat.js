@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ChatMessage from "./ChatMessage";
 import { useDispatch, useSelector } from "react-redux";
 import { addMessage } from "../utils/chatSlice";
 import { generateRandomName, makeRandomMessage } from "../utils/helper";
+import {BiSolidSend} from "react-icons/bi"
 
 const LiveChat = () => {
-  const [liveMessage, setLiveMessage] = useState("");
-
+  
   const dispatch = useDispatch();
 
   const chatMessages = useSelector((store) => store.chat.messages);
+
+  const [liveMessage, setLiveMessage] = useState("");
 
   useEffect(() => {
     const i = setInterval(() => {
@@ -45,14 +47,14 @@ const LiveChat = () => {
         setLiveMessage("");
       }}>
         <input
-          className="px-2 w-[70%] border border-x-0 border-t-0 border-gray-400"
+          className="px-2 w-[85%] border border-x-0 border-t-0 border-gray-400"
           type="text"
-          value={liveMessage}
           onChange={(e) => {
             setLiveMessage(e.target.value);
           }}
+          value={liveMessage}
         />
-        <button className="px-2 ml-4 bg-green-200 rounded-sm">Submit</button>
+        <button className="p-2 m-2 rounded-lg shadow-sm border border-b-3 focus:outline-0"><BiSolidSend /></button>
       </form>
     </>
   );

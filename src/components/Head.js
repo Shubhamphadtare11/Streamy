@@ -88,7 +88,7 @@ const Head = () => {
           <div className="fixed bg-white py-2 px-2 w-[25rem] shadow-lg rounded-lg border border-gray-100">
             <ul>
               {suggestions.map((s) => (
-                <li key={s} className="py-2 px-3 shadow-sm hover:bg-gray-100">
+                <li key={s} className="flex py-2 px-3 shadow-sm hover:bg-gray-100">
                   <BiSearchAlt2 className="mt-2 mr-2" /> {s}
                 </li>
               ))}
@@ -97,10 +97,10 @@ const Head = () => {
         )}
       </div>
       <div className="flex items-center col-span-1 justify-around">
-      <BiVideoPlus className="h-8 mr-7 text-3xl" />
-        <BsBell className="h-8 mr-7 text-2xl" />
+      <BiVideoPlus className="h-8 mr-3 text-3xl" />
+        <BsBell className="h-8 mr-3 text-2xl" />
         <img
-          className="h-8"
+          className="h-8 mr-3"
           src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
           alt="user-logo"
         />
