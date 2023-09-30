@@ -3,6 +3,8 @@ import { toggleMenu } from "../utils/appSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { YOUTUBE_SEARCH_API } from "../utils/constants";
 import { cacheResults } from "../utils/searchSlice";
+import { BiSearchAlt2, BiVideoPlus } from "react-icons/bi";
+import { BsBell } from "react-icons/bs";
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -87,7 +89,7 @@ const Head = () => {
             <ul>
               {suggestions.map((s) => (
                 <li key={s} className="py-2 px-3 shadow-sm hover:bg-gray-100">
-                  🔍 {s}
+                  <BiSearchAlt2 className="mt-2 mr-2" /> {s}
                 </li>
               ))}
             </ul>
@@ -95,20 +97,12 @@ const Head = () => {
         )}
       </div>
       <div className="flex items-center col-span-1 justify-around">
+      <BiVideoPlus className="h-8 mr-7 text-3xl" />
+        <BsBell className="h-8 mr-7 text-2xl" />
         <img
-          className="h-9 w-8 cursor-pointer"
-          alt="recorder"
-          src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/video-512.png"
-        />
-        <img
-          className="h-9 cursor-pointer"
-          alt="bell"
-          src="https://img.icons8.com/?size=512&id=16008&format=png"
-        />
-        <img
-          className="h-7 cursor-pointer"
-          alt="user"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODEUZaWd7WmVgrTxi7w3HS63qUTu3B79uUA&usqp=CAU"
+          className="h-8"
+          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+          alt="user-logo"
         />
       </div>
     </div>
