@@ -28,6 +28,9 @@ code {
   transition-duration: 2s;
 }
 
+.sidebarList{
+width: 100%;
+}
 /* Body Outlet Stylesheet */
 
 .bodyOutlet{

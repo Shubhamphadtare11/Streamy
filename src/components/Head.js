@@ -68,7 +68,7 @@ const Head = () => {
         </a>
       </div>
       <div className="col-span-10 px-10">
-        <div className="flex">
+        <div className="flex h-[90%]">
           <input
             className="w-[71%] border border-gray-400 p-2 px-5 rounded-l-full"
             type="text"

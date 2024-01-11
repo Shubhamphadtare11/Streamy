@@ -35,7 +35,7 @@ const LiveChat = () => {
           ))}
         </div>
       </div>
-      <form className="w-full p-2 ml-2 border border-gray-200 rounded-lg" onSubmit={(e) =>{
+      <form className="w-[22rem] p-2 ml-2 border border-gray-200 rounded-lg" onSubmit={(e) =>{
         e.preventDefault();
 
         dispatch(

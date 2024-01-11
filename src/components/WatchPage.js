@@ -10,6 +10,7 @@ import { PiShareFat } from "react-icons/pi";
 import { GoDownload } from "react-icons/go";
 import { BsThreeDots } from "react-icons/bs";
 import { FaUserTie } from "react-icons/fa6";
+import "../styles/WatchPage.css"
 
 const WatchPage = () => {
   
@@ -36,11 +37,9 @@ const WatchPage = () => {
   
   return (
     <div className=" w-full">
-      <div className="px-5 flex ">
-        <div>
-          <iframe
-            width="850"
-            height="600"
+      <div className="px-5 flex flex-col md:flex-row">
+        <div class="responsive-container">
+          <iframe class="responsive-iframe"
             src={"https://www.youtube.com/embed/" + searchParams.get("v")}
             title="YouTube video player"
             frameBorder="0"
@@ -48,7 +47,7 @@ const WatchPage = () => {
             allowFullScreen
           ></iframe>
         </div>
-        <div className="w-full">
+        <div>
           <LiveChat />
         </div>
       </div>

@@ -16,7 +16,7 @@ const ButtonList = () => {
   ];
 
   return (
-    <div className="flex">
+    <div className="flex flex-wrap">
       {listButtons.map((list, index) => (
         <Button name={list} key={index} />
       ))}
