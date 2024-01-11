@@ -5,6 +5,7 @@ import { YOUTUBE_SEARCH_API } from "../utils/constants";
 import { cacheResults } from "../utils/searchSlice";
 import { BiSearchAlt2, BiVideoPlus } from "react-icons/bi";
 import { BsBell } from "react-icons/bs";
+import { IoSearch } from "react-icons/io5";
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -49,7 +50,7 @@ const Head = () => {
   };
 
   return (
-    <div className="grid grid-flow-col p-5 m-2 shadow-lg">
+    <div className="grid grid-flow-col p-5 m-2 shadow-lg sticky top-0 bg-white">
       <div className="flex col-span-1">
         <img
           onClick={() => toggleMenuHandler()}
@@ -77,11 +78,7 @@ const Head = () => {
             onBlur={() => setShowSuggestions(false)}
           />
           <button className="border border-gray-400 px-5 bg-gray-100  rounded-r-full">
-            <img
-              className="w-[20px]"
-              alt="search-icon"
-              src="https://img.icons8.com/?size=512&id=132&format=png"
-            />
+          <IoSearch />
           </button>
         </div>
         {showSuggestions && (
