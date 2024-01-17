@@ -7,7 +7,7 @@ const actualComment = [
       text:"when can we expect EP-04 ?? you made me fall in love with JavaScript, Amazing content",
       reply:[
         {
-          name: "Samat chavan",
+          name: "Samat Chavan",
           text: "After the hype of linkedin i came here and believe me it was worth it all...the way of your presentation and the feeling that  instead of a teacher a friend is teaching,makes the videos more and more interesting.thanks a lot for sharing your precious knowledge with us and that too for free of cost.",
           reply: [],
         },
@@ -19,28 +19,28 @@ const actualComment = [
       text:"when can we expect EP-04 ?? you made me fall in love with JavaScript, 🚀🚀🚀♥Amazing content",
       reply:[
         {
-          name: "Samat chavan",
+          name: "Samat Chavan",
           text: "hh my God Man!! 🔥 Heavy stuffs. I literally had goosebumps when you showed practical example of 📚 Thank you so much for these awesome contents. 🙏🏼",
           reply: [],
         },
         {
-          name: "Samat chavan",
-          text: "namaste rract project very⭐🔴🚀♥ good",
+          name: "Samat Chavan",
+          text: "namaste react project very⭐🔴🚀♥ good",
           reply: [],
         },
       ]
     },
     {
-      name:"@rahulchavan",
+      name:"@RahulChavan",
       text:"You kept the old cooking style alive, fan of the your cooking brother एकदा तरी येतलाय जेवुक😁😁",
       reply:  [
         {
-          name: "Samat chavan",
+          name: "Samat Chavan",
           text: "कोणी कोणी शेवट पर्यंत व्हिडिओ बघितला? Also please let us know how do you liked it..❤️🙂 See you until next weekend 😊🙏🌴",
           reply: [],
         },
         {
-          name: "Samat chavan",
+          name: "Samat Chavan",
           text: "You kept the old cooking style alive, fan of the your cooking brother एकदा तरी येतलाय जेवुक😁😁",
           reply: [],
         },
@@ -51,18 +51,18 @@ const actualComment = [
       text:"when can we expect EP-04 ?? you made me fall in love with JavaScript, Amazing content",
       reply: [
         {
-          name: "Samat chavan",
+          name: "Samat Chavan",
           text: "Amo suas receitas,e seu estilo de cozinhar tbm!!❤❤😊😊",
           reply: [],
         },
         {
-          name: "Kishor chavan",
+          name: "Kishor Chavan",
           text: "Pooja tu kharach all rounder aahes.Tuja recipe khup chan astat.👌👌❤️",
           reply: [],
         },
         {
-          name: "Harshdeep chavan",
-          text: "namaste rract project very good",
+          name: "Harshdeep Chavan",
+          text: "namaste react project very good",
           reply: [],
         },
       ],
@@ -72,7 +72,7 @@ const actualComment = [
       text:"Literally i was studying from 2 hour and feeling so ❤❤❤ tired then accidentally come on this playlist ...❤❤❤ Feeling like someone is singing for me and literally a different vibe comes ❤❤❤    ",
       reply:[
         {
-          name: "Samat chavan",
+          name: "Samat Chavan",
           text: "Your voice is totally heart touching ❤😊",
           reply: [],
         },
@@ -84,28 +84,28 @@ const actualComment = [
       text:"when can we expect EP-04 ?? you made me fall in love with JavaScript, Amazing content",
       reply:[
         {
-          name: "Samat chavan",
-          text: "namaste rract project very good",
+          name: "Samat Chavan",
+          text: "namaste react project very good",
           reply: [],
         },
         {
-          name: "Samat chavan",
+          name: "Samat Chavan",
           text: "Aaaaahhhhhhhh kya voice hai. Yaar 🔥🔥🔥...,...❤️❤️❤️so sweet", 
           reply: [],
         },
       ]
     },
     {
-      name:"@rahulchavan",
+      name:"@RahulChavan",
       text:"Magical voice 💫💫💫❣️",
       reply:  [
         {
-          name: "Samat chavan",
-          text: "namaste rract project very good",
+          name: "Samat Chavan",
+          text: "namaste react project very good",
           reply: [],
         },
         {
-          name: "Samat chavan",
+          name: "Samat Chavan",
           text: "What a magical and fantastic voice🥳🤩🤩🥰🥰😍😍💯💯",
           reply: [],
         },
@@ -116,18 +116,18 @@ const actualComment = [
       text:"when can we expect EP-04 ?? you made me fall in love with JavaScript, Amazing content",
       reply: [
         {
-          name: "Samat chavan",
+          name: "Samat Chavan",
           text: "What a magical Superb voice… I m Artist when I m working alwz listen ur songs … it’s gave me energy to do my work ✍",
           reply: [],
         },
         {
-          name: "Kishor chavan",
+          name: "Kishor Chavan",
           text: "What a magical and fantastic voice🥳🤩🤩🥰🥰😍😍💯💯",
           reply: [],
         },
         {
-          name: "Harshdeep chavan",
-          text: "namaste rract project very good",
+          name: "Harshdeep Chavan",
+          text: "namaste react project very good",
           reply: [],
         },
       ],
