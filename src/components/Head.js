@@ -50,7 +50,7 @@ const Head = () => {
   };
 
   return (
-    <div className="grid grid-flow-col p-2 m-2 md:p-5 md:m-2 shadow-lg sticky top-0 bg-white z-50">
+    <div className="grid grid-flow-col p-2 m-2 md:p-5 md:m-2 shadow-lg sticky top-0 bg-white z-[1000]">
       <div className="flex col-span-1">
         <div className="w-[31px]">
         <img
