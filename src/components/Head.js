@@ -50,34 +50,36 @@ const Head = () => {
   };
 
   return (
-    <div className="grid grid-flow-col p-5 m-2 shadow-lg sticky top-0 bg-white z-50">
+    <div className="grid grid-flow-col p-2 m-2 md:p-5 md:m-2 shadow-lg sticky top-0 bg-white z-50">
       <div className="flex col-span-1">
+        <div className="w-[31px]">
         <img
           onClick={() => toggleMenuHandler()}
-          className="h-8 cursor-pointer"
+          className="h-8 cursor-pointer block"
           alt="menu"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKXjowOqsVBCCZ4Y4uSW8-7AqQemT3iTcbg&usqp=CAU"
         />
+        </div>
 
         <a href="/">
           <img
-            className="h-7 mx-2"
+            className="h-7 mx-2 hidden md:block"
             alt="youtube-logo"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuE54d8krphaVP1AQ1Jd4G1uRqLcA2N81TnA&usqp=CAU"
           />
         </a>
       </div>
-      <div className="col-span-10 px-10">
+      <div className="col-span-10 px-5 md:px-10">
         <div className="flex h-[90%]">
           <input
-            className="w-[71%] border border-gray-400 p-2 px-5 rounded-l-full"
+            className="w-[85%] border border-gray-400 p-2 px-5 rounded-l-full"
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             onFocus={() => setShowSuggestions(true)}
             onBlur={() => setShowSuggestions(false)}
           />
-          <button className="border border-gray-400 px-5 bg-gray-100  rounded-r-full">
+          <button className="border border-gray-400 px-2 md:px-5 bg-gray-100  rounded-r-full">
           <IoSearch />
           </button>
         </div>
@@ -94,10 +96,10 @@ const Head = () => {
         )}
       </div>
       <div className="flex items-center col-span-1 justify-around">
-      <BiVideoPlus className="h-8 mr-3 text-3xl" />
-        <BsBell className="h-8 mr-3 text-2xl" />
+      <BiVideoPlus className="md:h-8 h-5 mr-1 md:mr-3 text-2xl md:text-3xl" />
+        <BsBell className="md:h-8 h-5 mr-1 md:mr-3 text-2xl md:text-2xl" />
         <img
-          className="h-8 mr-3"
+          className="mr-1 md:h-8 h-5 md:mr-3"
           src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
           alt="user-logo"
         />

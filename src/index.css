@@ -24,15 +24,12 @@ code {
   cursor: pointer;
 }
 
+
 .sidebarList{
   transition-duration: 2s;
 }
-
-.sidebarList{
-width: 100%;
-}
 /* Body Outlet Stylesheet */
 
-.bodyOutlet{
+/* .bodyOutlet{
   padding: 0 45px;
-}
+} */

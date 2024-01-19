@@ -11,7 +11,7 @@ const Body = () => {
         <Sidebar />
       </div>
 
-      <div className="bodyOutlet">
+      <div className="bodyOutlet px-[0px] md:px-[45px]">
         <Outlet />
       </div>
     </div>

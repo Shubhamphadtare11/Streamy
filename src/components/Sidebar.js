@@ -39,7 +39,7 @@ const Sidebar = () => {
   if (!isMenuOpen) return null;
 
   return (
-    <div className="p-5 shadow-lg sidebarList">
+    <div className="p-5 shadow-lg sidebarList absolute z-[100] sm:relative bg-white w-[58%] sm:w-[100%]">
       <ul>
         <li className="py-2 flex hover:bg-gray-200 rounded-lg pl-2 font-bold">
           <Link to="/" className="flex">
