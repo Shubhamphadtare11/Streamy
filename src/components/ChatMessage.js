@@ -1,6 +1,6 @@
+import React from "react";
+
 const ChatMessage = ({name, message}) => {
-
-
 
     return(
         <div className="flex items-center"> 
@@ -9,8 +9,10 @@ const ChatMessage = ({name, message}) => {
             alt="user"
            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQODEUZaWd7WmVgrTxi7w3HS63qUTu3B79uUA&usqp=CAU"
             />
+            <div>
             <span className="font-medium px-2">{name}</span>
             <span className="text-sm font-light">{message}</span>
+            </div>
         </div>
     );
 };

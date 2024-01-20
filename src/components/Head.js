@@ -63,9 +63,9 @@ const Head = () => {
 
         <a href="/">
           <img
-            className="h-7 mx-2 hidden md:block"
-            alt="youtube-logo"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuE54d8krphaVP1AQ1Jd4G1uRqLcA2N81TnA&usqp=CAU"
+            className="h-9 mx-2 hidden md:block"
+            alt="Logo"
+            src="https://raw.githubusercontent.com/keshavop/Streamy-Youtube-Clone/main/src/assests/logo_light_theme.webp"
           />
         </a>
       </div>
@@ -96,10 +96,10 @@ const Head = () => {
         )}
       </div>
       <div className="flex items-center col-span-1 justify-around">
-      <BiVideoPlus className="md:h-8 h-5 mr-1 md:mr-3 text-2xl md:text-3xl" />
-        <BsBell className="md:h-8 h-5 mr-1 md:mr-3 text-2xl md:text-2xl" />
+      <BiVideoPlus className="cursor-pointer md:h-8 h-5 mr-1 md:mr-3 text-2xl md:text-3xl" />
+        <BsBell className="cursor-pointer md:h-8 h-5 mr-1 md:mr-3 text-2xl md:text-2xl" />
         <img
-          className="mr-1 md:h-8 h-5 md:mr-3"
+          className="cursor-pointer mr-1 md:h-8 h-5 md:mr-3"
           src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
           alt="user-logo"
         />

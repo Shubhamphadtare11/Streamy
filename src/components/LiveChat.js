@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
-import ChatMessage from "./ChatMessage";
+import React, { useState,useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import ChatMessage from "./ChatMessage";
 import { addMessage } from "../utils/chatSlice";
 import { generateRandomName, makeRandomMessage } from "../utils/helper";
 import {BiSolidSend} from "react-icons/bi"
 
 const LiveChat = () => {
+
+  const [liveMessage, setLiveMessage] = useState("");
   
   const dispatch = useDispatch();
 
   const chatMessages = useSelector((store) => store.chat.messages);
-
-  const [liveMessage, setLiveMessage] = useState("");
 
   useEffect(() => {
     const i = setInterval(() => {
@@ -29,14 +29,15 @@ const LiveChat = () => {
   return (
     <>
     
-      <div className=" h-[600px] w-[100%]  ml-2 p-2 border border-gray-200 rounded-lg overflow-y-hidden overflow-y-scroll flex flex-col-reverse">
-        <div>
+      <div className=" h-[600px] w-full  ml-2 p-2 border border-gray-200 rounded-lg overflow-y-scroll flex flex-col-reverse">
+    
           {chatMessages.map((c, i) => (
             <ChatMessage key={i} name={c.name} message={c.message} />
           ))}
-        </div>
+
       </div>
-      <form className="w-[100%] flex p-2 ml-2 border border-gray-200 rounded-lg" onSubmit={(e) =>{
+      <div className="w-full  p-2 ml-2 border border-gray-200 rounded-lg">
+      <form className="flex" onSubmit={(e) =>{
         e.preventDefault();
 
         dispatch(
@@ -50,14 +51,15 @@ const LiveChat = () => {
         <input
           className="px-2 w-[85%] border border-x-0 border-t-0 border-gray-400"
           type="text"
+          value={liveMessage}
           onChange={(e) => {
             setLiveMessage(e.target.value);
           }}
-          value={liveMessage}
+          
         />
         <button className="p-2 m-2 rounded-lg shadow-sm border border-b-3 focus:outline-0"><BiSolidSend /></button>
       </form>
-     
+      </div>
     </>
   );
 };
