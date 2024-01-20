@@ -6,6 +6,7 @@ import { cacheResults } from "../utils/searchSlice";
 import { BiSearchAlt2, BiVideoPlus } from "react-icons/bi";
 import { BsBell } from "react-icons/bs";
 import { IoSearch } from "react-icons/io5";
+import logo_light_theme from "../utils/logo/logo_light_theme.webp";
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -65,7 +66,7 @@ const Head = () => {
           <img
             className="h-9 mx-2 hidden md:block"
             alt="Logo"
-            src="https://raw.githubusercontent.com/keshavop/Streamy-Youtube-Clone/main/src/assests/logo_light_theme.webp"
+            src={logo_light_theme}
           />
         </a>
       </div>
