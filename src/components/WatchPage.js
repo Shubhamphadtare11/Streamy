@@ -5,6 +5,7 @@ import { useSearchParams } from "react-router-dom";
 import CommentsContainer from "./CommentsContainer";
 import LiveChat from "./LiveChat";
 import { YOUTUBE_VIDEO_BYID } from "../utils/constants";
+import nFormatter from "../utils/nFormatter";
 import { FiThumbsUp, FiThumbsDown } from "react-icons/fi";
 import { PiShareFat } from "react-icons/pi";
 import { GoDownload } from "react-icons/go";
@@ -34,6 +35,15 @@ const WatchPage = () => {
     dispatch(closeMenu());
   }, []);
 
+  function numberWithCommas(x) {
+    x = x.toString();
+    var pattern = /(-?\d+)(\d{3})/;
+    while (pattern.test(x))
+        x = x.replace(pattern, "$1,$2");
+    return x;
+}
+
+
   return (
     <div className=" w-full">
       <div className="px-5 grid grid-cols-12">
@@ -44,7 +54,7 @@ const WatchPage = () => {
               src={
                 "https://www.youtube.com/embed/" +
                 searchParams.get("v") +
-                "?autoplay=1&mute=1"
+                "?autoplay=1&"
               }
               title="YouTube video player"
               frameBorder="0"
@@ -58,6 +68,7 @@ const WatchPage = () => {
         </div>
       </div>
       <div>
+        
         {videoInfo.map((video) => {
           return (
             <>
@@ -68,7 +79,7 @@ const WatchPage = () => {
                 </h1>
                 <div>
                   <div className=" m-2">
-                    <section className="flex">
+                    <section className="flex items-center">
                       <div className="flex">
                         <div>
                           <FaUserTie className="rounded-full mt-1 border border-gray-400 text-4xl" />
@@ -83,7 +94,7 @@ const WatchPage = () => {
                         </div>
                       </div>
                       <div>
-                        <button className="bg-black text-white border border-gray-200 shadow-sm px-5 py-1 rounded-full m-2 ml-5">
+                        <button className="bg-black text-white border border-gray-200 shadow-sm px-5 py-2 rounded-full m-2 ml-5">
                           Subscribe
                         </button>
                       </div>
@@ -91,18 +102,18 @@ const WatchPage = () => {
 
                     <section>
                       <div className="flex flex-wrap">
-                        <button className="border flex border-gray-200 shadow-sm px-2 py-1 bg-gray-200 rounded-full m-2 hover:bg-gray-300 ">
-                          <FiThumbsUp className="mx-3 mt-1" />{" "}
-                          {video?.statistics?.likeCount} |{" "}
-                          <FiThumbsDown className="mx-3 mt-1" />
+                        <button className="border flex items-center border-gray-200 shadow-sm px-1 py-1 bg-gray-200 rounded-full m-2 hover:bg-gray-300 ">
+                          <FiThumbsUp className="mx-2 mt-1" />{" "}
+                          {nFormatter(video?.statistics?.likeCount)} |{" "}
+                          <FiThumbsDown className="mx-2 mt-1" />
                         </button>
-                        <button className=" flex border border-gray-200 shadow-sm px-2 py-1 bg-gray-200 rounded-full m-2 hover:bg-gray-300 ">
+                        <button className=" flex border border-gray-200 shadow-sm px-1 pr-2 py-1 bg-gray-200 rounded-full m-2 hover:bg-gray-300 ">
                           <PiShareFat className="mx-2 mt-1 text-xl" /> Share
                         </button>
-                        <button className="flex border border-gray-200 shadow-sm px-2 py-1 bg-gray-200 rounded-full m-2 hover:bg-gray-300 ">
+                        <button className="flex border border-gray-200 shadow-sm px-1 pr-2 py-1 bg-gray-200 rounded-full m-2 hover:bg-gray-300 ">
                           <GoDownload className="mx-1 text-xl" /> Download
                         </button>
-                        <button className="border border-gray-200 shadow-sm px-2 py-1 bg-gray-200 rounded-full m-2 hover:bg-gray-300 ">
+                        <button className="border border-gray-200 shadow-sm px-2  py-1 bg-gray-200 rounded-full m-2 hover:bg-gray-300 ">
                           <BsThreeDots />
                         </button>
                       </div>
@@ -113,15 +124,15 @@ const WatchPage = () => {
               {/* Video Details Section */}
               <div className="m-2 rounded-lg shadow-sm bg-gray-100 p-2 ">
                 <p className="font-bold">
-                  {video?.statistics?.viewCount} Views 😎{" "}
-                  {video?.snippet?.publishedAt}
+                  <span className="mr-3">{nFormatter(video?.statistics?.viewCount)} Views {" "}</span>
+                  <span>{video?.snippet?.publishedAt}</span> 
                 </p>
-                <p>{video?.snippet?.description}</p>
+                <p className="text-xs">{video?.snippet?.description}</p>
               </div>
               {/* Comment Section */}
               <div className="mt-5">
                 <h1 className="m-2  font-bold text-2xl">
-                  {video?.statistics?.commentCount} Comments.
+                  { numberWithCommas(video?.statistics?.commentCount)} Comments.
                 </h1>
               </div>
             </>
