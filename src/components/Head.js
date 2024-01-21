@@ -18,11 +18,12 @@ const Head = () => {
   useEffect(() => {
     // console.log(searchQuery);
     const timer = setTimeout(() => {
-      if (searchCache[searchQuery]) {
-        setSuggestions(searchCache[searchQuery]);
-      } else {
-        getSearchSuggestions();
-      }
+      // if (searchCache[searchQuery]) {
+      //   setSuggestions(searchCache[searchQuery]);
+      // } else {
+        
+      // }
+      getSearchSuggestions();
     }, 200);
 
     return () => {
