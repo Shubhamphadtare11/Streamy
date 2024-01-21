@@ -85,7 +85,7 @@ const Head = () => {
           </button>
         </div>
         {showSuggestions && (
-          <div className="fixed bg-white py-2 px-2 w-[25rem] shadow-lg rounded-lg border border-gray-100">
+          <div className="fixed bg-white py-2 px-2 w-[13rem] md:w-[25rem]  rounded-lg  border-gray-100">
             <ul>
               {suggestions.map((s) => (
                 <li key={s} className="flex py-2 px-3 shadow-sm hover:bg-gray-100">
