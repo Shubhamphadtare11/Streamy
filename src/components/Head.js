@@ -55,7 +55,7 @@ const Head = () => {
       <div className="flex col-span-1">
         <div className="w-[31px]">
         <img
-          onClick={() => toggleMenuHandler()}
+          onClick={toggleMenuHandler}
           className="h-8 cursor-pointer block"
           alt="menu"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCKXjowOqsVBCCZ4Y4uSW8-7AqQemT3iTcbg&usqp=CAU"
