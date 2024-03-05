@@ -8,6 +8,8 @@ import MainContainer from "./components/MainContainer";
 import WatchPage from "./components/WatchPage";
 import Demo from "./components/Demo";
 import Demo2 from "./components/Demo2";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 const appRouter = createBrowserRouter([{
   path: "/",
@@ -34,15 +36,26 @@ const appRouter = createBrowserRouter([{
 },
 ]);
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+      queries: {
+          staleTime: 10000,
+      },
+  },
+});
+
 function App() {
   return (
 
-    <Provider store={store} >
+<QueryClientProvider client={queryClient}>
+<Provider store={store} >
     <div>
       <Head />
       <RouterProvider router={appRouter} />
     </div>
     </Provider>
+<ReactQueryDevtools initialIsOpen={false} />
+</QueryClientProvider>
   );
 }
 
