@@ -54,11 +54,11 @@ const Sidebar = () => {
             Shorts
           </Link>
         </li>
-        <li className="py-2 flex hover:bg-gray-200 rounded-lg pl-2">
+        <li className="py-2 flex hover:bg-gray-200 rounded-lg w-40 pl-2 ">
           <Link to="/" className="flex">
             {" "}
             <MdOutlineSubscriptions className="mr-5 mt-1 text-xl" />
-            Subscriptions
+           Subscriptions
           </Link>
         </li>
       </ul>

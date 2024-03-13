@@ -6,6 +6,7 @@ Code pushed to new machine
 - ✍ Vercel hosting
 - ✍ React-Router-Dom Updated
 - ✍ Functional Components
+- ✍ Tanstack Query/React Query Used
 
 #⭐⭐ Implemented Key Features ⭐⭐
 - ✅ Shimmer UI

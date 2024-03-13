@@ -12,10 +12,7 @@ const ButtonList = () => {
     "Cooking",
     "Soccer",
     "WWE",
-    "Valentine",
-    "Tennis",
-    "Entertainment",
-    "Bollywood",
+    "Valentine"
   ];
 
   return (
