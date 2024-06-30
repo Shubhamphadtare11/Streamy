@@ -4,11 +4,11 @@ import { FiThumbsUp, FiThumbsDown } from "react-icons/fi";
 const actualComment = [
     {
       name:"@spillthebuzz",
-      text:"when can we expect EP-04 ?? you made me fall in love with JavaScript, Amazing content",
+      text:"I've watched this video like 10 times already, and each time, it's just as impressive as the first.",
       reply:[
         {
-          name: "Samat Chavan",
-          text: "After the hype of linkedin i came here and believe me it was worth it all...the way of your presentation and the feeling that  instead of a teacher a friend is teaching,makes the videos more and more interesting.thanks a lot for sharing your precious knowledge with us and that too for free of cost.",
+          name: "Luisa Martinez",
+          text: "This video made my entire day! Thanks so much for sharing such an inspiring piece.",
           reply: [],
         },
       ]
@@ -16,121 +16,125 @@ const actualComment = [
     },
     {
       name:"@DebojyotiMandal",
-      text:"when can we expect EP-04 ?? you made me fall in love with JavaScript, 🚀🚀🚀♥Amazing content",
+      text:"Great job! Keep up the fantastic work you're doing. I'm looking forward to more content from you.",
       reply:[
         {
-          name: "Samat Chavan",
-          text: "hh my God Man!! 🔥 Heavy stuffs. I literally had goosebumps when you showed practical example of 📚 Thank you so much for these awesome contents. 🙏🏼",
+          name: "Hiroki Tanaka",
+          text: "Anyone else watching in Lockdown? This video really speaks to current time",
           reply: [],
         },
         {
-          name: "Samat Chavan",
-          text: "namaste react project very⭐🔴🚀♥ good",
+          name: "Sophie Dupont",
+          text: "his content deserves way more views! I hope it gets the recognition it truly deserves.",
           reply: [],
         },
       ]
     },
     {
-      name:"@RahulChavan",
-      text:"You kept the old cooking style alive, fan of the your cooking brother एकदा तरी येतलाय जेवुक😁😁",
+      name:"@Elena",
+      text:"You kept the old cooking style alive, fan of the your cooking brother",
       reply:  [
         {
-          name: "Samat Chavan",
-          text: "कोणी कोणी शेवट पर्यंत व्हिडिओ बघितला? Also please let us know how do you liked it..❤️🙂 See you until next weekend 😊🙏🌴",
+          name: "Elena Petrova",
+          text: "This is absolutely the best tutorial I've found on this particular topic. Clear and informative!",
           reply: [],
         },
         {
-          name: "Samat Chavan",
-          text: "You kept the old cooking style alive, fan of the your cooking brother एकदा तरी येतलाय जेवुक😁😁",
+          name: "Anna Petrovna",
+          text: "This content deserves way more views! I hope it gets the recognition it truly deserves.",
           reply: [],
         },
       ]
     },
     {
-      name:"@yogeshsabankar",
-      text:"when can we expect EP-04 ?? you made me fall in love with JavaScript, Amazing content",
+      name: "@Muhammad",
+      text: "when can we expect EP-04 ?? you made me fall in love with JavaScript, Amazing content",
       reply: [
         {
-          name: "Samat Chavan",
-          text: "Amo suas receitas,e seu estilo de cozinhar tbm!!❤❤😊😊",
+          name: "Sophie Smith",
+          text: "Your tutorials are incredibly helpful! Looking forward to EP-04!",
           reply: [],
         },
         {
-          name: "Kishor Chavan",
-          text: "Pooja tu kharach all rounder aahes.Tuja recipe khup chan astat.👌👌❤️",
+          name: "John Doe",
+          text: "Your JavaScript explanations are top-notch! Keep up the great work!",
           reply: [],
         },
         {
-          name: "Harshdeep Chavan",
-          text: "namaste react project very good",
-          reply: [],
-        },
-      ],
-    },
-    {
-      name:"@spillthebuzz",
-      text:"Literally i was studying from 2 hour and feeling so ❤❤❤ tired then accidentally come on this playlist ...❤❤❤ Feeling like someone is singing for me and literally a different vibe comes ❤❤❤    ",
-      reply:[
-        {
-          name: "Samat Chavan",
-          text: "Your voice is totally heart touching ❤😊",
-          reply: [],
-        },
-      ]
-      
-    },
-    {
-      name:"@DebojyotiMandal",
-      text:"when can we expect EP-04 ?? you made me fall in love with JavaScript, Amazing content",
-      reply:[
-        {
-          name: "Samat Chavan",
-          text: "namaste react project very good",
+          name: "Emily Johnson",
+          text: "I've learned so much from your videos! Can't wait for the next episode!",
           reply: [],
         },
         {
-          name: "Samat Chavan",
-          text: "Aaaaahhhhhhhh kya voice hai. Yaar 🔥🔥🔥...,...❤️❤️❤️so sweet", 
+          name: "Daniel Brown",
+          text: "Your content has really inspired me to dive deeper into JavaScript!",
           reply: [],
-        },
+        }
       ]
     },
     {
-      name:"@RahulChavan",
-      text:"Magical voice 💫💫💫❣️",
-      reply:  [
-        {
-          name: "Samat Chavan",
-          text: "namaste react project very good",
-          reply: [],
-        },
-        {
-          name: "Samat Chavan",
-          text: "What a magical and fantastic voice🥳🤩🤩🥰🥰😍😍💯💯",
-          reply: [],
-        },
-      ]
-    },
-    {
-      name:"@yogeshsabankar",
-      text:"when can we expect EP-04 ?? you made me fall in love with JavaScript, Amazing content",
+      name: "@spillthebuzz",
+      text: "I was feeling tired after studying for hours, then stumbled upon this playlist... It's like a breath of fresh air!",
       reply: [
         {
-          name: "Samat Chavan",
-          text: "What a magical Superb voice… I m Artist when I m working alwz listen ur songs … it’s gave me energy to do my work ✍",
+          name: "Jessica Lee",
+          text: "Your playlist is exactly what I needed to unwind after a long day! Thank you!",
           reply: [],
         },
         {
-          name: "Kishor Chavan",
-          text: "What a magical and fantastic voice🥳🤩🤩🥰🥰😍😍💯💯",
+          name: "Michael Clark",
+          text: "Listening to your playlist is like therapy for my soul. It's so soothing!",
+          reply: [],
+        }
+      ]
+    },
+    {
+      name: "@DebojyotiMandal",
+      text: "Your JavaScript tutorials are amazing! When can we expect EP-04?",
+      reply: [
+        {
+          name: "Alice Brown",
+          text: "Your explanations are so clear and easy to follow. Can't wait for the next one!",
           reply: [],
         },
         {
-          name: "Harshdeep Chavan",
-          text: "namaste react project very good",
+          name: "David Wilson",
+          text: "Your tutorials have been a game-changer for me. Looking forward to more!",
+          reply: [],
+        }
+      ]
+    },
+    {
+      name: "@Maddy",
+      text: "Your voice is truly magical! 💫💖",
+      reply: [
+        {
+          name: "Sophia Garcia",
+          text: "Listening to your voice brings so much joy! Keep singing!",
           reply: [],
         },
-      ],
+        {
+          name: "Andrew Miller",
+          text: "Your voice is like a ray of sunshine on a cloudy day. Love it!",
+          reply: [],
+        }
+      ]
+    },
+    {
+      name: "@Joe",
+      text: "Your JavaScript tutorials are fantastic! Can't wait for more content from you.",
+      reply: [
+        {
+          name: "Isabella Martinez",
+          text: "Your tutorials are so helpful! They've really boosted my understanding of JavaScript!",
+          reply: [],
+        },
+        {
+          name: "Liam Wilson",
+          text: "Your explanations are so clear and concise. Looking forward to the next tutorial!",
+          reply: [],
+        }
+      ]
     }
   ]
   
